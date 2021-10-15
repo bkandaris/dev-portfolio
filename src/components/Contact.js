@@ -7,15 +7,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_h8l5byv', form.current, 'user_Zod23S6fYb9xLRNmu8Yz7')
+    emailjs.sendForm('service_in0itit', 'template_h8l5byv', form.current, 'user_Zod23S6fYb9xLRNmu8Yz7')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-      e.target.reset();
   };
- 
 
   return (
     <form ref={form} onSubmit={sendEmail}>
