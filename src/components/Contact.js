@@ -7,26 +7,38 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_in0itit', 'template_h8l5byv', form.current, 'user_Zod23S6fYb9xLRNmu8Yz7')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        'service_in0itit',
+        'template_h8l5byv',
+        form.current,
+        'user_Zod23S6fYb9xLRNmu8Yz7'
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
-      alert("Thank you for your message!");
+        }
+      );
+    e.target.reset();
+    alert('Thank you for your message!');
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div>
+      <h3>Contact</h3>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type='text' name='user_name' />
+        <label>Email</label>
+        <input type='email' name='user_email' />
+        <label>Message</label>
+        <textarea name='message' />
+        <input type='submit' value='Send' />
+      </form>
+    </div>
   );
 };
 
