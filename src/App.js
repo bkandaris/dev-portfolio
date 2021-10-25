@@ -7,7 +7,7 @@ import Particles from 'react-particles-js';
 function App() {
   return (
     <div>
-      {/* <Particles
+      <Particles
         params={{
           polygon: {
             enable: true,
@@ -20,7 +20,7 @@ function App() {
         }}
       />
       <Navbar />
-      <Header /> */}
+      <Header />
       <Contact />
     </div>
   );

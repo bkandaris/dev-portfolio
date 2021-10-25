@@ -87,4 +87,57 @@ nav a.nav-link {
 }
 
 /* Contact */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(./contactbackground.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
 
+.contact-header {
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  height: 300px;
+  width: 600px;
+  background-color: white;
+  box-shadow: 10px 10px 16px #000000;
+}
+
+.form-info {
+  height: 100%;
+  background-color: #0c0b0b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-info > input {
+  width: 60%;
+  margin-bottom: 0.3rem;
+}
+
+.textbox {
+  width: 60%;
+  margin-bottom: 1.2rem;
+}
+
+#submit-button {
+  width: 80px;
+  font-weight: bold;
+  background: green;
+  color: white;
+}

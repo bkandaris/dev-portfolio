@@ -1,8 +1,17 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Swal from 'react-bootstrap-sweetalert';
 
 const Contact = () => {
   const form = useRef();
+
+  const successAlert = () => {
+    Swal.fire({
+      title: 'Good job!',
+      text: 'You clicked the button.',
+      icon: 'success',
+    });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,17 +36,19 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <h3>Contact</h3>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type='text' name='user_name' />
-        <label>Email</label>
-        <input type='email' name='user_email' />
-        <label>Message</label>
-        <textarea name='message' />
-        <input type='submit' value='Send' />
-      </form>
+    <div className='contact-wrapper'>
+      <h3 className='contact-header'>Contact</h3>
+      <div className='contact-form'>
+        <form className='form-info' ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type='text' name='user_name' />
+          <label>Email</label>
+          <input type='email' name='user_email' />
+          <label>Message</label>
+          <textarea className='textbox' name='message' />
+          <input id='submit-button' type='submit' value='Send' />
+        </form>
+      </div>
     </div>
   );
 };
