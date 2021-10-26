@@ -88,13 +88,13 @@ nav a.nav-link {
 
 /* Contact */
 .contact-wrapper {
+  padding: 50px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url(./contactbackground.png) no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -102,11 +102,8 @@ nav a.nav-link {
 
 .contact-header {
   font-size: 3.4rem;
-  color: white;
+  color: orange;
   margin-bottom: 1.3rem;
-  text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px,
-    rgba(0, 0, 0, 0.8) 0 30px 25px;
-  transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
 }
 
 .form {
@@ -114,28 +111,31 @@ nav a.nav-link {
   flex-direction: column;
 }
 .contact-form {
-  height: 400px;
-  width: 600px;
+  border-radius: 5px;
+  height: 800px;
+  width: 500px;
   background-color: white;
-  box-shadow: 10px 10px 16px #000000;
+  border: 1px solid darkgrey;
 }
 
 .form-info {
   height: 100%;
-  background-color: #0c0b0b;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0.8rem;
 }
 
 .form-info > input {
   width: 60%;
-  margin-bottom: 0.8rem;
+  border-radius: 5px;
 }
 
 .textbox {
+  border-radius: 5px;
   width: 60%;
   height: 30%;
   margin-bottom: 1.2rem;
@@ -151,4 +151,38 @@ nav a.nav-link {
 #submit-button:hover {
   background: white;
   color: green;
+}
+
+/* About me */
+
+.about-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  left: calc(-60% + 105%);
+  top: calc(-200% + 105%);
+  border-radius: 50%;
+  height: 1811px;
+  width: 1401px;
+  background-color: rgba(255, 166, 0, 0.657);
+}
+
+.about-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-left {
+  width: 48%;
+}
+
+.about-right {
+  width: 48%;
 }
