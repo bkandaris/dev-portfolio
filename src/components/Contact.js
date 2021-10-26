@@ -1,38 +1,31 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import Swal from 'react-bootstrap-sweetalert';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
+import swal from 'sweetalert2/dist/sweetalert2.all.min.js';
 
 const Contact = () => {
   const form = useRef();
 
-  const successAlert = () => {
-    Swal.fire({
-      title: 'Good job!',
-      text: 'You clicked the button.',
-      icon: 'success',
-    });
-  };
-
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_in0itit',
-        'template_h8l5byv',
-        form.current,
-        'user_Zod23S6fYb9xLRNmu8Yz7'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     'service_in0itit',
+    //     'template_h8l5byv',
+    //     form.current,
+    //     'user_Zod23S6fYb9xLRNmu8Yz7'
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
     e.target.reset();
-    alert('Thank you for your message!');
+    Swal.fire('The Internet?', 'That thing is still around?', 'question');
   };
 
   return (

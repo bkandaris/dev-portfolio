@@ -141,3 +141,7 @@ nav a.nav-link {
   background: green;
   color: white;
 }
+#submit-button:hover {
+  background: white;
+  color: green;
+}
