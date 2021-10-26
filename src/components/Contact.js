@@ -55,54 +55,23 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    // working on
     const isValid = handleValidation();
     if (isValid) {
-      // need to uncomment so that it works
-      // emailjs
-      //   .sendForm(
-      //     'service_in0itit',
-      //     'template_h8l5byv',
-      //     form.current,
-      //     'user_Zod23S6fYb9xLRNmu8Yz7'
-      //   )
-      //   .then(
-      //     (result) => {
-      //       console.log(result.text);
-      //     },
-      //     (error) => {
-      //       console.log(error.text);
-      //     }
-      //   );
-      e.target.reset();
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Thank you for your message!',
-        text: 'I will respond as soon as possible!',
-        showConfirmButton: false,
-        timer: 2500,
-      });
-
-      // end working on
-
-      // need to uncomment so that it works
-      // emailjs
-      //   .sendForm(
-      //     'service_in0itit',
-      //     'template_h8l5byv',
-      //     form.current,
-      //     'user_Zod23S6fYb9xLRNmu8Yz7'
-      //   )
-      //   .then(
-      //     (result) => {
-      //       console.log(result.text);
-      //     },
-      //     (error) => {
-      //       console.log(error.text);
-      //     }
-      //   );
+      emailjs
+        .sendForm(
+          'service_in0itit',
+          'template_h8l5byv',
+          form.current,
+          'user_Zod23S6fYb9xLRNmu8Yz7'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       e.target.reset();
       Swal.fire({
         position: 'center',
