@@ -17,9 +17,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className='about-right'>
-          <h3 className='about-header'>
-            A few technologies I've worked with recently
-          </h3>
+          <h3 className='about-header'>Skills</h3>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
