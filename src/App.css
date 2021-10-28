@@ -161,6 +161,11 @@ nav a.nav-link {
   height: 600px;
 }
 
+.about-header-left {
+  margin: 1rem 0;
+  text-align: center;
+}
+
 .circle {
   position: absolute;
   z-index: -1;
@@ -174,22 +179,46 @@ nav a.nav-link {
 
 .about-info-wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80%;
+
+  height: 100%;
 }
 
 .about-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2%;
   width: 40%;
-  height: 87%;
+  height: 100%;
 }
 
 .about-right {
-  width: 39%;
-  margin: 5% 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
 }
 
 .about-text {
   font-size: 1.2rem;
   overflow-wrap: break-word;
+}
+
+.about-header-right {
+  color: white;
+  text-align: center;
+}
+
+.skills {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+  list-style: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  font-size: 1.3rem;
 }
