@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Particles from 'react-particles-js';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
+      <Projects />
       <Contact />
     </div>
   );
