@@ -224,4 +224,45 @@ nav a.nav-link {
 }
 
 /* Project Cards */
+.projects-header {
+  text-align: center;
+  margin: 1rem auto;
+}
 
+.card-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  height: 350px;
+}
+
+.image-wrapper {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
+
+.project-pic {
+  border-radius: 50%;
+  height: 80%;
+}
+
+.project-desc-wrapper {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.project-desc-wrapper > h3 {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.project-desc-wrapper > p {
+  width: 90%;
+  margin: .5rem auto;
+}
