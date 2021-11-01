@@ -16,7 +16,7 @@ const Projects = ({
   console.log('myProjects', myProjects);
   return (
     <div>
-      <h3 className='projects-header'>Projects</h3>
+      <h3 className='projects-header'>Some of my recent projects</h3>
       {myProjects.map((project, index) => {
         return (
           <ProjectCard

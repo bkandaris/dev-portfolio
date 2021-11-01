@@ -1,9 +1,9 @@
 /* Navbar */
-
-nav {
-  z-index: 2;
+#sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
-
 nav a.nav-link {
   font-size: 0.9rem;
   font-weight: 400;
@@ -86,71 +86,55 @@ nav a.nav-link {
   width: 100vh;
 }
 
-/* Contact */
-.contact-wrapper {
-  padding: 50px;
+/* Project Cards */
+.projects-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  margin: 0;
+}
+
+.card-wrapper {
+  width: 100%;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  height: 350px;
+}
+
+.card-wrapper:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.image-wrapper {
+  width: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
+  background-color: orange;
 }
 
-.contact-header {
-  font-size: 3.4rem;
-  color: orange;
-  margin-bottom: 1.3rem;
+.project-pic {
+  border-radius: 50%;
+  height: 80%;
 }
 
-.form {
+.project-desc-wrapper {
+  width: 50%;
   display: flex;
   flex-direction: column;
-}
-.contact-form {
-  border-radius: 5px;
-  height: 800px;
-  width: 500px;
-  background-color: white;
-  border: 1px solid darkgrey;
-}
-
-.form-info {
-  height: 100%;
-  background-color: white;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 0.8rem;
 }
 
-.form-info > input {
-  width: 60%;
-  border-radius: 5px;
+.project-desc-wrapper > h3 {
+  margin: 1.5rem;
+  text-align: center;
 }
 
-.textbox {
-  border-radius: 5px;
-  width: 60%;
-  height: 30%;
-  margin-bottom: 1.2rem;
-}
-
-#submit-button {
-  width: 80px;
-  font-weight: bold;
-  background: green;
-  color: white;
-}
-
-#submit-button:hover {
-  background: white;
-  color: green;
+.project-desc-wrapper > p {
+  width: 85%;
+  margin: 0.5rem auto;
 }
 
 /* About me */
@@ -223,46 +207,71 @@ nav a.nav-link {
   font-size: 1.3rem;
 }
 
-/* Project Cards */
-.projects-header {
-  text-align: center;
-  margin: 1rem auto;
-}
-
-.card-wrapper {
-  width: 100%;
+/* Contact */
+.contact-wrapper {
+  background-color: black;
+  padding: 50px;
   overflow: hidden;
   display: flex;
-  height: 350px;
-}
-
-.image-wrapper {
-  width: 49%;
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: orange;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
 }
 
-.project-pic {
-  border-radius: 50%;
-  height: 80%;
+.contact-header {
+  font-size: 3.4rem;
+  color: orange;
+  margin-bottom: 1.3rem;
 }
 
-.project-desc-wrapper {
-  width: 49%;
+.form {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+}
+.contact-form {
+  border-radius: 5px;
+  height: 800px;
+  width: 500px;
+  background-color: white;
+  border: 1px solid darkgrey;
+}
+
+.form-info {
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 0.8rem;
 }
 
-.project-desc-wrapper > h3 {
-  margin: 1.5rem;
-  text-align: center;
+.form-info > input {
+  width: 60%;
+  border-radius: 5px;
 }
 
-.project-desc-wrapper > p {
-  width: 90%;
-  margin: .5rem auto;
+.textbox {
+  border-radius: 5px;
+  width: 60%;
+  height: 30%;
+  margin-bottom: 1.2rem;
+}
+
+#submit-button {
+  width: 80px;
+  font-weight: bold;
+  background: green;
+  color: white;
+}
+
+#submit-button:hover {
+  transition: 0.5s;
+  background: white;
+  color: green;
 }
