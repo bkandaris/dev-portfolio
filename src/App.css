@@ -28,11 +28,11 @@ nav a.nav-link {
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
-  border-top: 0.18rem solid darkblue;
+  border-top: 0.18rem solid lightblue;
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.18rem solid darkblue;
+  border-top: 0.18rem solid lightblue;
 }
 
 /* Header */
@@ -129,13 +129,16 @@ nav a.nav-link {
   align-items: center;
   justify-content: center;
   background-color: lightblue;
+  flex-direction: column;
 }
 
 .project-pic {
-  height: 80%;
+  height: 100%;
+  width: 100%;
 }
 
 .project-desc-wrapper {
+  padding: 1rem;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -143,13 +146,35 @@ nav a.nav-link {
 }
 
 .project-desc-wrapper > h3 {
-  margin: 1.5rem;
-  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
 }
 
 .project-desc-wrapper > p {
-  width: 85%;
+  width: 100%;
   margin: 0.5rem auto;
+}
+
+.tech-used {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-used > p {
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  padding: 8px 10px;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+}
+
+.icon-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* About me */
