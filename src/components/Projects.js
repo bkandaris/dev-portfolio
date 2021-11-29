@@ -9,14 +9,15 @@ const Projects = ({
   projectDescription,
   hostedAt,
   githubLink,
+  technologiesUsed,
 }) => {
   const [myProjects, setMyProjects] = useState(listedProjects);
 
   console.log('listedProjects', listedProjects);
   console.log('myProjects', myProjects);
   return (
-    <div>
-      <h3 className='projects-header'>Some of my recent projects</h3>
+    <div id='projects'>
+      <h3 className='projects-header'>Projects</h3>
       {myProjects.map((project, index) => {
         return (
           <ProjectCard
@@ -27,6 +28,7 @@ const Projects = ({
             projectDescription={project.projectDescription}
             hostedAt={project.hostedAt}
             githubLink={project.githubLink}
+            technologiesUsed={project.technologiesUsed}
           />
         );
       })}

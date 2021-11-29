@@ -85,8 +85,8 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact-wrapper'>
-      <h3 className='contact-header'>Contact Me</h3>
+    <div className='contact-wrapper' id='contact'>
+      <h3 className='contact-header'>Contact</h3>
       <div className='contact-form'>
         <form className='form-info' ref={form} onSubmit={sendEmail}>
           <label>Name</label>

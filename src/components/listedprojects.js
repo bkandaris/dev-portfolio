@@ -8,6 +8,7 @@ const projectsArray = [
       'This is the first description of a project. I used these specific technologies to create this project',
     hostedAt: 'https://unsplash.com/s/photos/dogs',
     githubLink: 'https://github.com/',
+    technologiesUsed: ['HTML', 'CSS', 'React', 'Node.js', 'Express'],
   },
   {
     projectTitle: 'First Project',
@@ -18,6 +19,7 @@ const projectsArray = [
       'This is the first description of a project. I used these specific technologies to create this project',
     hostedAt: 'https://unsplash.com/s/photos/dogs',
     githubLink: 'https://github.com/',
+    technologiesUsed: ['HTML', 'CSS', 'React', 'Node.js', 'Express'],
   },
   {
     projectTitle: 'First Project',
@@ -28,6 +30,7 @@ const projectsArray = [
       'This is the first description of a project. I used these specific technologies to create this project',
     hostedAt: 'https://unsplash.com/s/photos/dogs',
     githubLink: 'https://github.com/',
+    technologiesUsed: ['HTML', 'CSS', 'React', 'Node.js', 'Express'],
   },
 ];
 

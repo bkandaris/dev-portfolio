@@ -17,9 +17,9 @@ const ProjectCard = (props) => {
       <div className='project-desc-wrapper'>
         <h3>{props.projectTitle}</h3>
         <p>{props.projectDescription}</p>
-
-        <p>{props.hostedAt}</p>
-        <p>{props.githubLink}</p>
+        {props.technologiesUsed.map((item, index) => {
+          return <p key={index}>{item}</p>;
+        })}
       </div>
     </div>
   );
