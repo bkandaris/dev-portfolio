@@ -22,8 +22,12 @@ const ProjectCard = (props) => {
           })}
         </div>
         <div className='icon-wrapper'>
-          <FontAwesomeIcon icon={faGithub} size='2x' />
-          <FontAwesomeIcon icon={faLink} size='2x' />
+          <a href='https://www.google.com'>
+            <FontAwesomeIcon icon={faGithub} size='2x' />
+          </a>
+          <a href='https://www.google.com'>
+            <FontAwesomeIcon icon={faLink} size='2x' />
+          </a>
         </div>
       </div>
     </div>

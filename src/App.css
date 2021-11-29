@@ -67,8 +67,9 @@ nav a.nav-link {
 /* Typed Text */
 
 .typed-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
+  margin: 0 10px;
 }
 
 .button-header {
@@ -116,25 +117,43 @@ nav a.nav-link {
   width: 100%;
   overflow: hidden;
   display: flex;
-  height: 350px;
 }
 
-.card-wrapper:nth-child(odd) {
-  flex-direction: row-reverse;
+@media only screen and (max-width: 750px) {
+  .card-wrapper {
+    font-size: 20px;
+    flex-direction: column;
+  }
 }
+
+@media only screen and (min-width: 750px) {
+  .card-wrapper:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+
+/* .card-wrapper:nth-child(odd) {
+  flex-direction: row-reverse;
+} */
 
 .image-wrapper {
   width: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightblue;
-  flex-direction: column;
+  flex-direction: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .image-wrapper {
+    width: 100%;
+  }
 }
 
 .project-pic {
-  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: auto;
   width: 100%;
+  object-fit: cover;
 }
 
 .project-desc-wrapper {
@@ -145,10 +164,28 @@ nav a.nav-link {
   justify-content: center;
 }
 
+@media only screen and (max-width: 750px) {
+  .project-desc-wrapper {
+    width: 100%;
+  }
+}
+
 .project-desc-wrapper > h3 {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-desc-wrapper > h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-desc-wrapper > p {
+    font-size: 14px;
+  }
 }
 
 .project-desc-wrapper > p {
@@ -161,6 +198,12 @@ nav a.nav-link {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 600px) {
+  .tech-used {
+    flex-wrap: wrap;
+  }
+}
+
 .tech-used > p {
   margin-right: 10px;
   margin-top: 10px;
@@ -169,6 +212,13 @@ nav a.nav-link {
   padding: 8px 10px;
   letter-spacing: 0.05rem;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) {
+  .tech-used > p {
+    font-size: 14px;
+    padding: 4px 5px;
+  }
 }
 
 .icon-wrapper {
@@ -206,7 +256,6 @@ nav a.nav-link {
 
 .about-info-wrapper {
   display: flex;
-
   height: 100%;
 }
 
@@ -221,6 +270,7 @@ nav a.nav-link {
 }
 
 .about-right {
+  margin-left: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,6 +282,12 @@ nav a.nav-link {
 .about-text {
   font-size: 1.2rem;
   overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-text {
+    font-size: 1rem;
+  }
 }
 
 .about-header-right {
