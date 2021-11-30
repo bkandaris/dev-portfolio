@@ -151,7 +151,7 @@ nav a.nav-link {
 .project-pic {
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: auto;
+  max-height: 300px;
   width: 100%;
   object-fit: cover;
 }
