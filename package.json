@@ -26,9 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +48,7 @@
   },
   "devDependencies": {
     "bootstrap": "^4.6.0",
+    "core-js": "^3.19.2",
     "web-vitals": "^2.1.2"
   }
 }
