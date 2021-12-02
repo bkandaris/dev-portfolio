@@ -117,6 +117,7 @@ nav a.nav-link {
   width: 100%;
   overflow: hidden;
   display: flex;
+  background-color: lightblue;
 }
 
 @media only screen and (max-width: 750px) {
@@ -131,10 +132,6 @@ nav a.nav-link {
     flex-direction: row-reverse;
   }
 }
-
-/* .card-wrapper:nth-child(odd) {
-  flex-direction: row-reverse;
-} */
 
 .image-wrapper {
   width: 50%;

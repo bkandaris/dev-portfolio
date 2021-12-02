@@ -10,7 +10,7 @@ const projectsArray = [
     technologiesUsed: ['React', 'Redux', 'CSS', 'Node.js', 'Express'],
   },
   {
-    projectTitle: 'Stock Market Tracker',
+    projectTitle: 'Stock Market App',
     projectImage: 'https://i.gyazo.com/ae1c8a8f918d0c194adeffcbb61ec771.png',
     projectImageAlt: 'stock app',
     projectDescription:
