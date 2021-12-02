@@ -14,7 +14,7 @@ const projectsArray = [
     projectImage: 'https://i.gyazo.com/ae1c8a8f918d0c194adeffcbb61ec771.png',
     projectImageAlt: 'stock app',
     projectDescription:
-      'An application that uses a third party API to pull in stock data. The user can type in a stock ticker and have the price history displayed on chart. ',
+      'An application that uses a third party API to pull in stock data. The user can type in a stock ticker and have the price history displayed on a chart. ',
     hostedAt: 'https://stocktrackerapplication.netlify.app/',
     githubLink: 'https://github.com/bkandaris/stock-app',
     technologiesUsed: ['React', 'CSS', 'Axios'],
