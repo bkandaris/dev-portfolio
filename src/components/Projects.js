@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ProjectCard from './ProjectCard';
 import listedProjects from './listedprojects';
 
@@ -11,14 +11,11 @@ const Projects = ({
   githubLink,
   technologiesUsed,
 }) => {
-  const [myProjects, setMyProjects] = useState(listedProjects);
 
-  console.log('listedProjects', listedProjects);
-  console.log('myProjects', myProjects);
   return (
     <div id='projects'>
       <h3 className='projects-header'>Projects</h3>
-      {myProjects.map((project, index) => {
+      {listedProjects.map((project, index) => {
         return (
           <ProjectCard
             key={index}

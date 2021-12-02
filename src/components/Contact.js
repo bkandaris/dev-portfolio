@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
-import swal from 'sweetalert2/dist/sweetalert2.all.min.js';
 
 const Contact = () => {
   const form = useRef();
