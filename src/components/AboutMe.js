@@ -13,10 +13,9 @@ const AboutMe = () => {
             to bring your ideas to life through technology.
           </p>
           <p className='about-text'>
-            After self-teaching for a while, I decided to join a web development
-            and computer science bootcamp to improve my skills. In that bootcamp
-            I learned not only the latest technologies, but how to build
-            applications with a team.
+            After self-teaching for a while, I joined a full stack web
+            development bootcamp to improve my skills. I learned not only the
+            latest technologies, but how to build applications with a team.
           </p>
         </div>
         <div className='about-right'>
