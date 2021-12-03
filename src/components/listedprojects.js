@@ -10,14 +10,14 @@ const projectsArray = [
     technologiesUsed: ['React', 'Redux', 'CSS', 'Node.js', 'Express'],
   },
   {
-    projectTitle: 'Stock Market App',
-    projectImage: 'https://i.gyazo.com/ae1c8a8f918d0c194adeffcbb61ec771.png',
-    projectImageAlt: 'stock app',
+    projectTitle: 'Traveler',
+    projectImage: 'https://i.gyazo.com/e44b6be0024adeb3b72c39216c1b7cfb.png',
+    projectImageAlt: 'traveler app',
     projectDescription:
-      'An application that uses a third party API to pull in stock data. The user can type in a stock ticker and have the price history displayed on a chart. ',
-    hostedAt: 'https://stocktrackerapplication.netlify.app/',
-    githubLink: 'https://github.com/bkandaris/stock-app',
-    technologiesUsed: ['React', 'CSS', 'Axios'],
+      'Users can create accounts and share their thoughts on places anywhere in the world or see what others thought of a place they may think of visiting.',
+    hostedAt: 'https://travelerapp.netlify.app/',
+    githubLink: 'https://github.com/bkandaris/travel-app-fe',
+    technologiesUsed: ['React', 'CSS', 'Redux', 'Node.js', 'Express'],
   },
   {
     projectTitle: "Drink Ingredient's application",

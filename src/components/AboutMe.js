@@ -7,14 +7,16 @@ const AboutMe = () => {
         <div className='about-left'>
           <h3 className='about-header-left'>About Me</h3>
           <p className='about-text'>
-            Hello! My name is Ben and I enjoy web development. Starting in 2018
-            I discovered the magic of turning code into web applications.
+            Hello, my name is Ben and I have a passion for web development and
+            learning. A few years ago I discovered the magic of turning code
+            into web applications. There is something exciting about being able
+            to bring your ideas to life through technology.
           </p>
           <p className='about-text'>
-            After self-teaching for a few months, I decided to join a web
-            development and computer science bootcamp to improve my skills. Now
-            that I have finished I look forward to starting a career in web
-            development!
+            After self-teaching for a while, I decided to join a web development
+            and computer science bootcamp to improve my skills. In that bootcamp
+            I learned not only the latest technologies, but how to build
+            applications with a team.
           </p>
         </div>
         <div className='about-right'>
