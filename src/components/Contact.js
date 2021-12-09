@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2/dist/sweetalert2.js';
+// import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 const Contact = () => {
   const form = useRef();
@@ -9,6 +9,7 @@ const Contact = () => {
     user_email: '',
     message: '',
   });
+  const [success, setSuccess] = useState(false);
 
   // working on
   const [user_nameErr, setUserNameErr] = useState({});
@@ -21,6 +22,13 @@ const Contact = () => {
       ...formState,
       [e.target.name]: value,
     });
+  };
+
+  const successMessage = () => {
+    setSuccess(true);
+    setTimeout(() => {
+      setSuccess(false);
+    }, [5000]);
   };
 
   const handleValidation = () => {
@@ -72,14 +80,15 @@ const Contact = () => {
           }
         );
       e.target.reset();
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Thank you for your message!',
-        text: 'I will respond as soon as possible!',
-        showConfirmButton: false,
-        timer: 2500,
-      });
+      // Swal.fire({
+      //   position: 'center',
+      //   icon: 'success',
+      //   title: 'Thank you for your message!',
+      //   text: 'I will respond as soon as possible!',
+      //   showConfirmButton: false,
+      //   timer: 2500,
+      // });
+      successMessage();
     }
   };
 
@@ -107,6 +116,11 @@ const Contact = () => {
           {Object.keys(message_err).map((key) => {
             return <p style={{ color: 'red' }}>{message_err[key]}</p>;
           })}
+          {success ? (
+            <p style={{ color: 'green' }}>
+              Thank you! I will respond as soon as possible!
+            </p>
+          ) : null}
           <input id='submit-button' type='submit' value='Send' />
         </form>
       </div>
